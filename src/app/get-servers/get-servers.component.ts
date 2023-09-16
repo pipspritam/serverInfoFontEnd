@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { serverInfo } from '../_model/serverInfo';
+import { ServerServicesService } from '../_service/server-services.service';
 
 @Component({
   selector: 'app-get-servers',
@@ -7,12 +9,13 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./get-servers.component.css']
 })
 export class GetServersComponent {
-  info:any;
-  constructor(private httpclient: HttpClient) { }
-  ngOnInit(){
-   let response= this.httpclient.get("http://127.0.0.1:8081/getServers");
-   response.subscribe((data)=>this.info=data);
+  info: any;
+  constructor(private httpclient: HttpClient, public serverInfo: serverInfo, public serverServices: ServerServicesService) { }
+  ngOnInit() {
 
+    this.serverServices.getServers().subscribe((data) => this.info = data);
+    
   }
-
+  
+  
 }
