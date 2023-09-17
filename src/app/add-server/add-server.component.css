@@ -1,0 +1,11 @@
+.addServer{
+    text-align: center;
+    width: 25%;
+    margin: 150px 50px 50px 600px;
+}
+.addServer h3,h5{
+    color: green;
+}
+.addServer button{
+    margin: 30px;
+}

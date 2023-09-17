@@ -10,10 +10,29 @@ import { ServerServicesService } from '../_service/server-services.service';
 })
 export class GetServerByidComponent {
   
+    showresult:boolean=false
+    noresult:boolean=false
     info: any;
-    id: string = "123";
     constructor(private httpclient: HttpClient, public serverInfo: serverInfo, public serverServices: ServerServicesService) { }
     getServerByid() {
-      this.serverServices.getServerById(this.id).subscribe((data) => this.info = data);
+      this.serverServices.getServerById(this.serverInfo.id).subscribe((res:any) => {
+        console.log(res)
+        this.info=res;
+     },
+     (error) => {
+      if (error.status === 404) {
+          console.log("Resource not found");
+      } 
+      else {
+          console.error("An error occurred:", error);
+      }
+      this.noresult=true
+  }
+     );
+
+      this.showresult=true;
     }
+    keepOrder = (a:any, b:any) => {
+      return a;
+  }
 }

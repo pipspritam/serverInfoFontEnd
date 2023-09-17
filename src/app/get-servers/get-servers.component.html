@@ -1,10 +1,12 @@
-<div>
+<div class="getServer">
+    <h3>Get Data From Server</h3>
+    <hr>
     <table>
         <tr>
-            <th>id</th>
-            <th>name</th>
-            <th>language</th>
-            <th>framework</th>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Language</th>
+            <th>Framework</th>
         </tr>
         <tr *ngFor="let e of info">
             <td>{{e.id}}</td>
@@ -13,5 +15,6 @@
             <td>{{e.framework}}</td>
         </tr>
     </table>
+    <br>
+    <button class="btn btn-success" [routerLink]="'/index'">Back To Home</button>
 </div>
-

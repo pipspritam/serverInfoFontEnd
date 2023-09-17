@@ -13,7 +13,10 @@ export class GetServersComponent {
   constructor(private httpclient: HttpClient, public serverInfo: serverInfo, public serverServices: ServerServicesService) { }
   ngOnInit() {
 
-    this.serverServices.getServers().subscribe((data) => this.info = data);
+    this.serverServices.getServers().subscribe((data) =>{
+
+      this.info = data
+    } );
     
   }
   

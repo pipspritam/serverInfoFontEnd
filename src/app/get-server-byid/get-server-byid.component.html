@@ -1,27 +1,27 @@
-<div>
-    <h1>Get Server By Id</h1>
+<div class="getServerByid">
+    <h3>Get Server By Id</h3>
+    <hr>
     <form (ngSubmit)="getServerByid()">
-        <label>Enter Id: </label>
-        <input type="text" name="id" placeholder="id">
-        <input type="submit" value="Get Server By Id">
+        
+        <input type="text" name="id" placeholder=" Enter Id" class="form-control" [(ngModel)]="serverInfo.id">
+        <br>
+        <button class="btn btn-primary">Submit</button>
     </form>
+    <br>
+    <div class="getServer" [hidden]="!showresult" >
+        <h3>Search Result</h3>
+        <hr>
+        <table>
+            <tr *ngFor="let e of info | keyvalue : keepOrder">
+                <th>{{e.key}}</th>
+                <td>{{e.value}}</td>
+                
+            </tr>
+        </table>
+        <br>
+    </div>
+    <div [hidden]="!noresult"><P>No result found</P></div>
+    <br><br>
+    <button class="btn btn-success" [routerLink]="'/index'">Back To Home</button>
 
 </div>
-<div>
-    <table>
-        <tr>
-            <th>id</th>
-            <th>name</th>
-            <th>language</th>
-            <th>framework</th>
-        </tr>
-        <tr *ngFor="let e of info">
-            <td>{{e.id}}</td>
-            <td>{{e.name}}</td>
-            <td>{{e.language}}</td>
-            <td>{{e.framework}}</td>
-        </tr>
-    </table>
-</div>
-
-

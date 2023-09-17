@@ -1,0 +1,19 @@
+.getServerByid{
+    text-align: center;
+    width: 25%;
+    margin: 100px 50px 50px 600px;
+    padding: 40px;
+}
+.getServer h3{
+    color: #0d6efd;
+}
+table, th, td {
+    border:1px solid grey;
+    
+}
+table{
+    width: 100%;
+}
+.getServerByid h3{
+    color: green;
+}
