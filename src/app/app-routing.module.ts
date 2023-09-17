@@ -4,12 +4,14 @@ import { GetServersComponent } from './get-servers/get-servers.component';
 import { IndexComponent } from './index/index.component';
 import { AddServerComponent } from './add-server/add-server.component';
 import { GetServerByidComponent } from './get-server-byid/get-server-byid.component';
+import { DeleteServerComponent } from './delete-server/delete-server.component';
 
 const routes: Routes = [{path: "",redirectTo:'index',pathMatch:'full'},
 {path: 'getServsrs', component: GetServersComponent},
 { path: 'index', component: IndexComponent},
 { path: 'addServer', component: AddServerComponent},
-{ path: 'getServerByid', component: GetServerByidComponent}
+{ path: 'getServerByid', component: GetServerByidComponent},
+{ path: 'deleteServer', component: DeleteServerComponent}
 ];
 
 @NgModule({

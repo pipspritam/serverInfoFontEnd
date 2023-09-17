@@ -25,4 +25,9 @@ export class ServerServicesService {
     let url=this.baseUrl+"/getServerByid/"+id;
     return this.httpclientobj.get(url);
   }
+
+  deleteServer(id:string){
+    let url=this.baseUrl+"/deleteServer/"+id;
+    return this.httpclientobj.delete(url);
+  }
 }

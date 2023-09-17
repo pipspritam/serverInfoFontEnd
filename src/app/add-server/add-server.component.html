@@ -3,6 +3,12 @@
     <div [hidden]="!successmessage">
         <h5>Data Added Successfully</h5>
     </div>
+    <div [hidden]="!noresult">
+        <h5>Please fill all the field</h5>
+    </div>
+    <div [hidden]="!duplicate">
+        <h5>Same data already exist</h5>
+    </div>
     <hr>
     <br>
     <input type="text" name="id" placeholder="id" class="form-control" [(ngModel)]="serverInfo.id">
@@ -13,6 +19,6 @@
     <br />
     <input type="text" name="framework" placeholder="framework" class="form-control" [(ngModel)]="serverInfo.framework">
     <br />
-    <button class="btn btn-primary" [routerLink]="'/index'">Back</button>
+    <button class="btn btn-primary" [routerLink]="'/index'" (click)="back()">Back</button>
     <button class="btn btn-primary">Submit</button>
 </form>

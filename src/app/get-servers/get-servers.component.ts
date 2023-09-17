@@ -19,6 +19,8 @@ export class GetServersComponent {
     } );
     
   }
-  
-  
+
+  back() {
+    this.serverInfo.id = "";
+  }
 }

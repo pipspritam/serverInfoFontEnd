@@ -1,0 +1,36 @@
+<div class="deleteServerByid">
+    <form (ngSubmit)="deleteServerByid()">
+        <h3>Delete Server By Id</h3>
+        
+        <input type="text" name="id" placeholder=" Enter Id" class="form-control" [(ngModel)]="serverInfo.id">
+        <br>
+        <button class="btn btn-primary">Submit</button>
+    </form>
+</div>
+<div class="getServer">
+    <h3>Get Data From Server</h3>
+    <div [hidden]="!noresult">
+        <h5>No server found</h5>
+    </div>
+    <div [hidden]="!successmessage">
+        <h5>Server deleted</h5>
+    </div>
+    <hr>
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Language</th>
+            <th>Framework</th>
+        </tr>
+        <tr *ngFor="let e of info">
+            <td>{{e.id}}</td>
+            <td>{{e.name}}</td>
+            <td>{{e.language}}</td>
+            <td>{{e.framework}}</td>
+            
+        </tr>
+    </table>
+    <br>
+    <button class="btn btn-success" [routerLink]="'/index'">Back To Home</button>
+</div>
