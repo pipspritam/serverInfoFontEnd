@@ -26,3 +26,36 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`.
 <p>Retrieve all the serverInfo from database</p>
 <img src="./screenshot/getServers.png"><br>
 
+
+## 4. Get Server By ID
+<p>Retrieve a particuler serverInfo by ID</p>
+<img src="./screenshot/getServerId.png"><br>
+
+### Case 1: ServerInfo with given ID is present in database
+<img src="./screenshot/getServerIdFound.png"><br>
+### Case 2: ServerInfo with given ID is not present in database
+<img src="./screenshot/getServerIdNoResult.png"><br>
+
+
+## 5. Get Server By Name
+<p>Retrieve one or more serverInfo by Name</p>
+<img src="./screenshot/getServerName.png"><br>
+
+### Case 1: ServerInfo with given name is present in database
+<img src="./screenshot/getServerNameFound.png"><br>
+### Case 2: ServerInfo with given name is not present in database
+<img src="./screenshot/getServerNameNoResult.png"><br>
+
+
+## 6. Delete Server By ID
+<p>Delete a particuler serverInfo by ID</p>
+<img src="./screenshot/delete.png"><br>
+
+### Case 1: ServerInfo with given ID deleted from database
+<img src="./screenshot/deleteServer.png"><br>
+### Case 2: ServerInfo with given ID for deletion is not present in database
+<img src="./screenshot/deleteNoServer.png"><br>
+
+
+
+
