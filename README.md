@@ -4,24 +4,25 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Sample Outputs
+## 1. Home Page
+<img src="./screenshot/index.png"><br>
 
-## Build
+## 2. Add New Server
+<p> Fill all the required field to add new server info in the database</p>
+<img src="./screenshot/addServer.png"><br>
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Case 1: Data Added Successfully
+<img src="./screenshot/addServerDone.png"><br>
+### Case 2: Data Already Exist
+<img src="./screenshot/addServerAlready.png"><br>
+### Case 3: Data Field Is Missing
+<img src="./screenshot/addServerFillAll.png"><br>
 
-## Running unit tests
+## 3. Get All Servers
+<p>Retrieve all the serverInfo from database</p>
+<img src="./screenshot/getServers.png"><br>
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
