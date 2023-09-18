@@ -26,6 +26,7 @@ export class DeleteServerComponent {
         if (res.id == "") {
           this.noresult = true;
           this.successmessage = false;
+          this.serverInfo.id = "";
         }
         else {
           this.serverServices.getServers().subscribe((data) => {

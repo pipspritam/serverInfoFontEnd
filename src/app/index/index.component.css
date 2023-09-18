@@ -1,7 +1,16 @@
 .index{
     text-align: center;
-    margin-top: 80px;
+    width: 50%;
+    margin: 150px 50px 50px 400px;
+    
 }
 .index button{
     margin: 15px;
+    font-size: 25px;
+}
+
+.index h3 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 50px;
 }

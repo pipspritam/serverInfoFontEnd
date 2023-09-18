@@ -17,3 +17,10 @@ table{
 .getServerByid h3{
     color: green;
 }
+
+#noresult p{
+    color: red;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}

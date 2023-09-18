@@ -16,9 +16,27 @@ table{
 .deleteServerByid{
     text-align: center;
     width: 25%;
-    margin: 100px 50px 50px 600px;
+    margin: 100px 50px 10px 600px;
     padding: 40px;
 }
 .deleteServerByid h3{
     color: green;
+}
+
+#noresult h5{
+    color: red;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    width: 25%;
+    margin: 20px 50px 50px 600px;
+}
+
+#found h5{
+    color: green;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    width: 25%;
+    margin: 20px 50px 50px 600px;
 }

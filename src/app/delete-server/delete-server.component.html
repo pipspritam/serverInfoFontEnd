@@ -7,14 +7,15 @@
         <button class="btn btn-primary">Submit</button>
     </form>
 </div>
+<div id="noresult" [hidden]="!noresult">
+    <h5>No server found</h5>
+</div>
+<div id="found" [hidden]="!successmessage">
+    <h5>Server deleted</h5>
+</div>
 <div class="getServer">
-    <h3>Get Data From Server</h3>
-    <div [hidden]="!noresult">
-        <h5>No server found</h5>
-    </div>
-    <div [hidden]="!successmessage">
-        <h5>Server deleted</h5>
-    </div>
+    <h3>Data Present In Server</h3>
+    
     <hr>
     <table>
         <tr>

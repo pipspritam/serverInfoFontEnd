@@ -3,8 +3,11 @@
     width: 25%;
     margin: 150px 50px 50px 600px;
 }
-.addServer h3,h5{
+.addServer h5{
     color: green;
+}
+.addServer h3{
+    color: rgb(38, 95, 186);
 }
 .addServer button{
     margin: 30px;
