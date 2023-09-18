@@ -1,10 +1,21 @@
 # FontEnd
-
+This is a basic WEB UI frontend for the application <code>https://github.com/pipspritam/JavaRESTAPI.git</code> <br>
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.2.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`.
+## Requirements
+* JDK 20 (java)
+* Mongodb
+* Spring Boot support in Visual Studio Code
+* Angular
+* Node.JS
+
+## How to run the application
+* Initially clone the backend application.
+* Clone the backend project: <code> git clone https://github.com/pipspritam/JavaRESTAPI.git </code>
+* Run the backend application.
+* Clone this project: <code> git clone https://github.com/pipspritam/serverInfoFontEnd.git </code>
+* Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`.
 
 
 ## Sample Outputs
